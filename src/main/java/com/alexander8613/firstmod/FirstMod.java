@@ -1,5 +1,6 @@
 package com.alexander8613.firstmod;
 
+import com.alexander8613.firstmod.block.ModBlock;
 import com.alexander8613.firstmod.item.ModCreativeModTabs;
 import com.alexander8613.firstmod.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -27,6 +28,8 @@ public class FirstMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModTabs.register(modEventBus);
+
+        ModBlock.register(modEventBus);
 
         ModItems.register(modEventBus);
 
